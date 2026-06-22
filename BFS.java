@@ -9,15 +9,4 @@ public class BFS {
         visited[start] = true;
 
         while (!queue.isEmpty()) {
-            int node = queue.poll();
-            System.out.print(node + " ");
-
-            for (int neighbor : graph.get(node)) {
-                if (!visited[neighbor]) {
-                    visited[neighbor] = true;
-                    queue.offer(neighbor);
-                }
-            }
-        }
-    }
-}
+            int node 
